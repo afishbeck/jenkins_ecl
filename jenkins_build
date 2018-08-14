@@ -1,0 +1,11 @@
+#!/bin/bash
+
+eclcc -platform=thor certify/Certify_DR.ecl
+eclcc -platform=thor certify/spray_verification.ecl
+
+eclcc -platform=thor build/build_index.ecl
+eclcc -platform=thor build/BuildDataFiles.ecl
+
+eclcc -platform=thor read/ReadIndexService.ecl
+eclcc -platform=thor read/read_index.ecl
+
