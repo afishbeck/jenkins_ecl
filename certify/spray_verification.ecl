@@ -16,7 +16,7 @@
 ############################################################################## */
 
 
-IMPORT $ AS Certification;
+IMPORT common AS Certification;
 
 out_file := DATASET(Certification.Setup.Sprayfile, Certification.Layout_FullFormat, THOR);
 
