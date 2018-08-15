@@ -1,0 +1,38 @@
+#!/bin/bash
+
+#thor builds
+echo thor builds
+
+eclcc -platform=thor certify/Certify_DR.ecl
+eclcc -platform=thor certify/spray_verification.ecl
+
+eclcc -platform=thor build/build_index.ecl
+eclcc -platform=thor build/BuildDataFiles.ecl
+
+eclcc -platform=thor read/ReadIndexService.ecl
+eclcc -platform=thor read/read_index.ecl
+
+#roxie builds
+echo roxie builds
+
+eclcc -platform=roxie certify/Certify_DR.ecl
+eclcc -platform=roxie certify/spray_verification.ecl
+
+eclcc -platform=roxie build/build_index.ecl
+eclcc -platform=roxie build/BuildDataFiles.ecl
+
+eclcc -platform=roxie read/ReadIndexService.ecl
+eclcc -platform=roxie read/read_index.ecl
+
+#hthor builds
+echo hthor builds
+
+eclcc -platform=hthor certify/Certify_DR.ecl
+eclcc -platform=hthor certify/spray_verification.ecl
+
+eclcc -platform=hthor build/build_index.ecl
+eclcc -platform=hthor build/BuildDataFiles.ecl
+
+eclcc -platform=hthor read/ReadIndexService.ecl
+eclcc -platform=hthor read/read_index.ecl
+
