@@ -27,7 +27,7 @@ i := Certification.IndexFile;
 TYPEOF(raw) xt(raw l, i r) := TRANSFORM
   SELF.__filepos := r.__filepos;
   SELF := l;
-E
+ENDD;
 
 o := FETCH(raw, i(lname = Std.Str.ToUpperCase(lnamein_value)), RIGHT.__filepos, xt(LEFT, RIGHT));
 OUTPUT(CHOOSEN(o,100));
