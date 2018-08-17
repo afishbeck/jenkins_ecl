@@ -29,4 +29,4 @@ export IndexFile := INDEX(Certification.DataFile,
                            birth_month,
                            __filepos
                           },
-                          Certification.Setup.KeyName);
+                          Certification.Setup.KeyName
